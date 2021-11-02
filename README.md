@@ -1,5 +1,5 @@
 # Laboratorium nr 1 - "Blog uruchomiony na PaaS"
-## Stworzyłem prostą aplikację webową.
+## Stworzyłem prostą aplikację webową - https://dominik28.pythonanywhere.com
 1. Aplikacja internetowa została postawiona na "PythonAnywhere".
 * Na stronie startowej można zobaczyć wszystkie dodane dotychczas posty.
 ![1](zrzutyEkranu/1.PNG)
