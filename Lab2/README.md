@@ -1,4 +1,4 @@
-# Laboratorium nr 1 - "Blog uruchomiony na PaaS"
+# Laboratorium nr 2 - "Rejestracja użytkowników"
 ## Stworzyłem aplikację webową obsługującą logowanie, rejestrowanie użytkowników. - https://dosiu28.pythonanywhere.com
 1. Aplikacja internetowa została postawiona na "PythonAnywhere".
 * Ekranem startowym strony jest ekran logowania.
