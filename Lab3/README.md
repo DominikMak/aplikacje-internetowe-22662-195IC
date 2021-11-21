@@ -10,3 +10,6 @@
 ![4](zrzuty/google-1.PNG)
 * Po prawidłowym wypełnieniu wymaganych pól, pojawia się informacja o prawidłowym przebiegu logowania.
 ![5](zrzuty/google-2.PNG)
+3. Zrzuty ekranu z aplikacji Facebook oraz Google.
+![6](zrzuty/facebook-3.PNG)
+![7](zrzuty/google-3.PNG)
