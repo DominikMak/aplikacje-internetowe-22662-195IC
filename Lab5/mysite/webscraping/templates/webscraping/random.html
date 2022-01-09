@@ -1,0 +1,56 @@
+{% extends 'webscraping\base.html' %}
+
+{% block title %}lxml oraz XPath{% endblock title %}
+{% block nav_link_rand %} active {% endblock nav_link_rand %}
+{% block content %}
+{% csrf_token %}
+    <div class="container m-auto p-0">
+        <div class="row-cols-1 text-center">
+            <h3>Przykłady z wykorzystaniem lxml oraz XPath</h3>
+            <hr>
+        </div>
+        <div class="shadow-sm p-3 mb-5 bg-body rounded m-3">
+            <h4 class="text-center">Przykład 1: <a href="https://zacniewski.github.io/about/">https://zacniewski.github.io/about/</a></h4>
+            <hr>
+            <div class="pass_text">
+                {{ex1}}
+            </div>
+        </div>
+
+        <div class="shadow-sm p-3 mb-5 bg-body rounded m-3">
+            <h4 class="text-center">Przykład 2: <a href="https://www.bbcgoodfood.com/recipes/ultimate-spaghetti-carbonara-recipe">https://www.bbcgoodfood.com/recipes/ultimate-spaghetti-carbonara-recipe</a></h4>
+            <hr>
+            <div class="pass_text">
+                {{ex2}}
+            </div>
+        </div>
+
+        <div class="shadow-sm p-3 mb-5 bg-body rounded m-3">
+            <h4 class="text-center">Przykład 3: <a href="https://www.eurofirany.com.pl/sklep-online/firany-1041">https://www.eurofirany.com.pl/sklep-online/firany-1041</a></h4>
+            <hr>
+            <div class="pass_text">
+                Znaleziono {{ amount }} firan:
+                <table>
+                    <tbody>
+                        {% for item in items %}
+                        <tr>
+                            <td>Nazwa: {{item.name}}</td>
+                            <td>Opis: {{item.opis}}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="shadow-sm p-3 mb-5 bg-body rounded m-3">
+            <h4 class="text-center">Przykład 4: <a href="https://www.w3schools.com/htmL/html_head.asp">https://www.w3schools.com/htmL/html_head.asp</a></h4>
+            <hr>
+            <div class="pass_text text-center">
+                Zawartość znacznika "head": </br>
+                <span>{{page_head}}</span>
+            </div>
+        </div>
+    </div>
+
+    {% endblock content %}

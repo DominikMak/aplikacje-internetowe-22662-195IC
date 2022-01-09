@@ -1,0 +1,27 @@
+{% extends 'webscraping\base.html' %}
+
+{% block title %}Wyniki wyszukiwania{% endblock title %}
+
+{% block content %}
+<div class="container">
+        <div class="row main">
+            <div class="panel-heading">
+                <div class="panel-title text-center">
+                    <h1 class="title-login">Wyniki wyszukiwania</h1>
+                </div>
+                <hr/>
+            </div>
+            <div class="main-login main-center2">
+                <ul class="list-group">
+                    <li class="list-group-item list-group-item-secondary liczba-wynikow">
+                        Znaleziono {{amount}} wyników
+                    </li>
+                    <li class="list-group-item">
+                        {{item}}
+                    </li>
+              </ul>
+            </div>
+        </div>
+    </div>
+   {% endblock content %}
+

@@ -1,0 +1,73 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href='https://fonts.googleapis.com/css?family=Passion+One' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.css"/>
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>-->
+    <script src="{% static 'js/jquery-ui.min.js' %}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.min.js"></script>
+
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet">
+    <link href="{% static 'css/custom_calendar.css' %}" rel="stylesheet">
+    <link href="{% static 'css/custom.css' %}" rel="stylesheet">
+
+    <script src="https://use.fontawesome.com/36ea4d565d.js"></script>
+
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="{% url 'home' %}">Web Scraping</a>
+          <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsing" aria-controls="collapsing" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="navbar-collapse collapse" id="collapsing" style="">
+            <ul id='nav-links' class="navbar-nav me-auto mb-2 mb-md-0">
+              <li class="nav-item navbar-custom">
+                <a class="nav-link {% block nav_link_home %}{% endblock nav_link_home %}" href="{% url 'home' %}">Web Scraping elementów HTML</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link {% block nav_link_id %}{% endblock nav_link_id %}" href="{% url 'search_id' %}">Wyszukaj po ID</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link {% block nav_link_class %}{% endblock nav_link_class %}" href="{% url 'search_class' %}">Wyszukaj po klasie</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link {% block nav_link_rand %}{% endblock nav_link_rand %}" href="{% url 'random' %}">lxml oraz XPath</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <div id="content">
+        {% block content %}
+        {% endblock %}
+    </div>
+
+    <div class="container">
+      <footer class="py-3 my-4">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+          <li class="nav-item"><a href="{% url 'home' %}" class="nav-link px-2 text-muted">Web Scraping elementów HTML</a></li>
+          <li class="nav-item"><a href="{% url 'search_id' %}" class="nav-link px-2 text-muted">Wyszukaj po ID</a></li>
+          <li class="nav-item"><a href="{% url 'search_class' %}" class="nav-link px-2 text-muted">Wyszukaj po klasie</a></li>
+          <li class="nav-item"><a href="{% url 'random' %}" class="nav-link px-2 text-muted">lxml oraz XPath</a></li>
+        </ul>
+        <p class="text-center text-muted">© 2022 Dominik Makuch</p>
+      </footer>
+    </div>
+    <script type="text/javascript" src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/bootstrap.js' %}"></script>
+</body>
+</html>

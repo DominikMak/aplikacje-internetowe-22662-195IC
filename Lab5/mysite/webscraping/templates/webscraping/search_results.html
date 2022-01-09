@@ -1,0 +1,42 @@
+{% extends 'webscraping\base.html' %}
+
+{% block title %}Wynik wyszukiwania{% endblock title %}
+
+{% block content %}
+<div class="container">
+        <div class="row main">
+            <div class="panel-heading">
+                <div class="panel-title text-center">
+                    <h1 class="title-login">Wyniki wyszukiwania</h1>
+                </div>
+                <hr/>
+            </div>
+            <div class="main-login main-center2">
+                <ul class="list-group">
+                    <li class="list-group-item list-group-item-secondary liczba-wynikow">
+                        Znaleziono {{amount}} wyników
+                    </li>
+                    {% for link in all_links %}
+                    <li class="list-group-item">
+                        Id: {{link.idd}}
+                        <br>
+                        Klasy: {{link.clas}}
+                        <br>
+                        Tekst: {{link.text}}
+                        <br>
+                        Href: {{link.href}}
+                        <br>
+                        Src: {{link.src}}
+                        <br>
+                        Alt: {{link.alt}}
+                        <br>
+                        Content: {{link.content}}
+                        <br>
+                        Name: {{link.name}}
+                    </li>
+                    {% endfor %}
+                  </ul>
+            </div>
+        </div>
+    </div>
+{% endblock content %}

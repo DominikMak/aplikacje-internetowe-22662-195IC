@@ -1,0 +1,35 @@
+{% extends 'webscraping\base.html' %}
+
+{% block title %}Wyszukaj po ID{% endblock title %}
+{% block nav_link_id %} active {% endblock nav_link_id %}
+
+{% block content %}
+    <div class="container">
+        <div class="row main">
+            <div class="panel-heading">
+                <div class="panel-title text-center">
+                    <h1 class="title-login">Wyszukiwanie po ID</h1>
+                </div>
+                <hr/>
+            </div>
+            <div class="main-login main-center">
+                <form action="{% url 'search_results_id' %}" method="POST">
+                    {% csrf_token %}
+                        <div class="form-group">
+                          <label for="url">Adres strony:</label>
+                          <input type="url" class="form-control" name="web_link" aria-describedby="url" required>
+                        </div>
+                        <div class="form-group">
+                          <label for="idd">ID elementu:</label>
+                          <input type="text" class="form-control" name="idd" required>
+                        </div>
+                    <br>
+                    <div class="form-group">
+                            <button type="submit" class="btn btn-primary btn-lg btn-block login-button">Wyszukaj</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+{% endblock content %}
