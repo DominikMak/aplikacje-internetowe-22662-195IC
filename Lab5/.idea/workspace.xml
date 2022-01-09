@@ -1,24 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="43dfb669-439a-4d6e-b032-063d6eb0ccd0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/mysite/webscraping/templates/webscraping/base.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mysite/webscraping/templates/webscraping/home.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mysite/webscraping/templates/webscraping/random.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mysite/webscraping/templates/webscraping/search_class.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mysite/webscraping/templates/webscraping/search_id.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mysite/webscraping/templates/webscraping/search_results.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mysite/webscraping/templates/webscraping/search_results_class.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mysite/webscraping/templates/webscraping/search_results_id.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/Lab1.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab2/bookmarks/account/templates/registration/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab2/bookmarks/account/templates/registration/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab2/bookmarks/bookmarks/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab2/bookmarks/bookmarks/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab2/bookmarks/bookmarks/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab2/bookmarks/bookmarks/urls.py" afterDir="false" />
-    </list>
+    <list default="true" id="43dfb669-439a-4d6e-b032-063d6eb0ccd0" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
